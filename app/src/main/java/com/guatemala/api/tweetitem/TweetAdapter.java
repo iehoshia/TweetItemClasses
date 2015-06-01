@@ -32,7 +32,9 @@ public class TweetAdapter extends ArrayAdapter<Tweet>{
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.tweet, parent, false);
         }
         TextView tTitulo = (TextView) convertView.findViewById(R.id.titulo);
-        tTitulo.setText(tweet.title);
+        tTitulo.setText(tweet.titulo);
+        TextView tMensaje = (TextView) convertView.findViewById(R.id.mensaje);
+        tMensaje.setText(tweet.mensaje);
         return convertView;
     }
 }
