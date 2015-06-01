@@ -7,7 +7,7 @@ public class Tweet {
     public String titulo;
     public String mensaje;
 
-    public Tweet (String title){
+    public Tweet (String titulo, String mensaje){
         this.titulo = titulo;
         this.mensaje = mensaje;
     }

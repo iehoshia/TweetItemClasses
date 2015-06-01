@@ -27,7 +27,7 @@ public class MainActivity extends ListActivity {
         tweetItemArrayAdapter = new TweetAdapter(this, lista);
         Tweet tweet;
         for (int i= 0; i<10; i++){
-            tweet = new Tweet(valores[i]);
+            tweet = new Tweet(valores[i], valores[i]);
             tweetItemArrayAdapter.add(tweet);
         }
 
